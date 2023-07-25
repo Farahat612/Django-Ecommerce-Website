@@ -11,11 +11,11 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.name
-
+    
 
 class Product(models.Model):
     name = models.CharField(max_length=200, null=True) #null=True means it is not required
-    price = models.FloatField()
+    price = models.DecimalField(max_digits=7, decimal_places=2) #max_digits=7 means that the max number of digits is 7, decimal_places=2 means that the max number of decimal places is 2
     digital = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
@@ -82,6 +82,7 @@ class OrderItem(models.Model):
         return total
     
 
+
 class ShippingAddress(models.Model):
     customer = models.ForeignKey(Customer, null=True, on_delete=models.SET_NULL) # if the customer is deleted, then set the shipping address to null
     order = models.ForeignKey(Order, null=True, on_delete=models.SET_NULL) # if the order is deleted, then set the shipping address to null
@@ -94,5 +95,4 @@ class ShippingAddress(models.Model):
     def __str__(self):
         return self.address #return the address
     
-
 
