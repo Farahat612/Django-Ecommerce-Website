@@ -24,7 +24,7 @@ To run the website on your local machine, follow these steps:
 3. Install the required dependencies: `$ pip install -r requirements.txt`
 4. Apply the database migrations: `$ python manage.py migrate`
 5. Start the development server: `$ python manage.py runserver`
-6. Open your web browser and visit `http://localhost:8000` to access the Social media website.
+6. Open your web browser and visit `http://localhost:8000` to access the website.
 
 
 ## Features
