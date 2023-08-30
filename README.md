@@ -6,7 +6,7 @@ An Ecommerce website built using Python and Django.
 
 The app was built during learning journey for learning purposes and practicing backend web development concepts using Django.
 The App covered good practice for Browser cookies, Django forms, Django built-in authentication system, dynamic routing and Django Template Language.
-Only Payement and user registeration modules are missing.
+Only Payment and user registration modules are missing.
 
 
 ## Watch a Demo
